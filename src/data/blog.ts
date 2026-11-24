@@ -1,0 +1,186 @@
+import type { BlogPost } from "@/types";
+
+export const blogCategories = [
+  "Heart health",
+  "Nutrition",
+  "Mental wellness",
+  "Fitness",
+  "Preventive care",
+  "Women's health",
+  "Children's health",
+  "Healthy lifestyle",
+];
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "b-01",
+    slug: "reading-your-blood-pressure-numbers",
+    title: "What your blood pressure numbers actually mean",
+    category: "Heart health",
+    excerpt:
+      "Two numbers, one cuff, and a lot of confusion. Here is how to read a blood pressure result without panicking about a single high reading.",
+    author: "Dr. Ananya Rao",
+    authorRole: "Cardiology",
+    date: "18 Nov 2026",
+    readingMinutes: 6,
+    featured: true,
+    body: [
+      "A blood pressure reading gives you two numbers. The upper one, systolic pressure, is the force in your arteries while the heart contracts. The lower one, diastolic pressure, is the force when the heart relaxes between beats. Both matter, and both are measured in millimetres of mercury.",
+      "A single raised reading is rarely meaningful on its own. Blood pressure moves through the day — it rises with a rushed journey to the clinic, with caffeine, with a full bladder, and with the simple anxiety of being measured. This is common enough to have a name: white coat hypertension.",
+      "What clinicians look for is a pattern. That is why you may be asked to record readings at home, at the same two times each day, for a week or two. A home log taken with a validated upper-arm monitor is often more useful than a one-off reading in a consultation room.",
+      "When you measure at home, sit quietly for five minutes first. Keep your back supported, feet flat on the floor and the cuff at heart level. Take two readings a minute apart and note both. Measuring immediately after climbing stairs will tell you very little.",
+      "If your log shows consistently raised numbers, that is worth a conversation — not an emergency. Most management starts with salt, sleep, weight and activity, and only then considers medication. Bring the log to your appointment; it changes the discussion from guesswork to evidence.",
+      "This article is general information, not advice about your own health. Discuss your readings with a doctor who knows your history.",
+    ],
+  },
+  {
+    id: "b-02",
+    slug: "protein-on-a-vegetarian-diet",
+    title: "Getting enough protein on an Indian vegetarian diet",
+    category: "Nutrition",
+    excerpt:
+      "Dal and rice is a better protein pairing than its reputation suggests. A practical look at building complete protein without supplements.",
+    author: "Dr. Ritu Malhotra",
+    authorRole: "Internal Medicine",
+    date: "14 Nov 2026",
+    readingMinutes: 7,
+    featured: false,
+    body: [
+      "Protein is the nutrient most often undercounted in a vegetarian diet, largely because the richest sources are spread thinly across a day rather than concentrated in one dish.",
+      "The traditional combination of a pulse and a grain — dal with rice, rajma with roti, idli with sambar — covers the amino acids each is short of on its own. You do not need to eat them in the same mouthful, only across the same day.",
+      "Paneer, curd, eggs for those who eat them, and soya in its various forms all raise the protein density of a meal considerably. A bowl of curd after lunch is one of the easiest additions most people can make.",
+      "Nuts and seeds help, but they are calorie-dense, so they work better as a measured handful than an open bowl. Roasted chana, on the other hand, is unusually efficient: high protein, high fibre, low cost.",
+      "If you are vegetarian and persistently tired, protein is worth checking, but so is vitamin B12 and iron — both are harder to get from plants alone, and both produce fatigue long before anything more obvious appears.",
+      "Speak to a doctor or dietitian before starting supplements, particularly if you are pregnant, managing kidney disease, or already on medication.",
+    ],
+  },
+  {
+    id: "b-03",
+    slug: "sleep-and-mental-health",
+    title: "Sleep is not a reward for a productive day",
+    category: "Mental wellness",
+    excerpt:
+      "Poor sleep and low mood feed each other. Breaking the loop usually starts with the hour before bed, not the night itself.",
+    author: "Dr. Sameer Qureshi",
+    authorRole: "Psychiatry",
+    date: "09 Nov 2026",
+    readingMinutes: 5,
+    featured: false,
+    body: [
+      "People who sleep badly are more likely to feel low, and people who feel low are more likely to sleep badly. The relationship runs in both directions, which is why treating one often improves the other.",
+      "The most common pattern I see is not difficulty falling asleep but difficulty stopping the day. The mind is still processing at midnight because it was given no other opportunity.",
+      "A wind-down hour helps more than any single trick. Dim the lights, put the phone somewhere else in the room, and do something undemanding. The point is to signal an ending, not to optimise anything.",
+      "If you wake at three in the morning and cannot return to sleep within twenty minutes, get up. Lying in the dark rehearsing worries teaches your brain that the bed is a place for worrying. Read something dull under low light and return when drowsy.",
+      "Persistent insomnia lasting more than a few weeks, especially alongside low mood or loss of interest, deserves a proper conversation rather than another sleep aid bought over the counter.",
+    ],
+  },
+  {
+    id: "b-04",
+    slug: "starting-to-exercise-after-forty",
+    title: "Starting to exercise again after forty",
+    category: "Fitness",
+    excerpt:
+      "The injuries I see are almost never from exercising. They are from exercising at the intensity you remember instead of the one you have.",
+    author: "Dr. Deepak Chauhan",
+    authorRole: "Orthopedics",
+    date: "05 Nov 2026",
+    readingMinutes: 6,
+    featured: false,
+    body: [
+      "Most people returning to exercise in their forties do not get hurt because the activity was wrong. They get hurt because they began at the intensity they last remember being capable of.",
+      "Tendons and connective tissue adapt more slowly than muscle and cardiovascular fitness. Your legs may feel ready for a long run three weeks in, while your Achilles tendon is still weeks behind.",
+      "A useful rule is to increase either duration or intensity in a given week, never both, and by no more than about a tenth. It feels frustratingly slow for the first month and remarkably fast by the sixth.",
+      "Build in two sessions a week of simple strength work. Squats, a hinge movement, a push and a pull, done with controlled form, protect joints far more effectively than stretching does.",
+      "Pain that sharpens during activity or persists the next morning is a signal to stop and get it assessed. Soreness that eases as you warm up usually is not.",
+      "If you have a heart condition, are managing diabetes, or have been inactive for several years, get cleared by a doctor before beginning.",
+    ],
+  },
+  {
+    id: "b-05",
+    slug: "annual-health-check-what-matters",
+    title: "Which parts of an annual health check actually matter",
+    category: "Preventive care",
+    excerpt:
+      "Packages advertise dozens of tests. A small number change what a doctor does next; the rest mostly generate anxiety.",
+    author: "Dr. Rahul Banerjee",
+    authorRole: "General Medicine",
+    date: "31 Oct 2026",
+    readingMinutes: 8,
+    featured: true,
+    body: [
+      "Health check packages compete on the number of tests included, which is an unhelpful way to choose one. A test is worth doing when the result would change a decision.",
+      "For most adults, the genuinely useful core is short: blood pressure, a fasting glucose or HbA1c, a lipid profile, a complete blood count, and a check of kidney and liver function. Add thyroid function if there are symptoms.",
+      "Age and history change the list. Cervical screening, mammography, and colorectal screening all have age thresholds worth knowing. A family history of early heart disease or diabetes moves several thresholds earlier.",
+      "Whole-body scans sold directly to consumers are the clearest example of testing without a question. They reliably find small, harmless irregularities, which then require follow-up imaging, which finds more.",
+      "The least glamorous part of a health check is the most valuable: the conversation. Height, weight, blood pressure, what you eat, how you sleep, whether you smoke, how much you drink. These predict far more than most of the panel.",
+      "Take previous reports with you. A result that has drifted over three years tells a doctor something a single number never can.",
+    ],
+  },
+  {
+    id: "b-06",
+    slug: "pcos-beyond-irregular-periods",
+    title: "PCOS is more than irregular periods",
+    category: "Women's health",
+    excerpt:
+      "A diagnosis most often made in the twenties, with implications that run through fertility, metabolism and mental health.",
+    author: "Dr. Meera Krishnan",
+    authorRole: "Gynecology",
+    date: "27 Oct 2026",
+    readingMinutes: 7,
+    featured: false,
+    body: [
+      "Polycystic ovary syndrome is usually noticed through irregular or absent periods, but the condition involves hormones and metabolism rather than the ovaries alone.",
+      "Insulin resistance sits underneath a large proportion of cases. That is why weight, activity and diet come up in every consultation, and why management overlaps considerably with the prevention of type 2 diabetes.",
+      "Diagnosis does not rest on an ultrasound alone. Cysts visible on a scan are common in women without the syndrome, and absent in some women who clearly have it. The picture comes from symptoms, blood work and imaging together.",
+      "Fertility is often the first worry raised, and it is worth saying plainly that many women with PCOS conceive, some with help and some without. It is a reason for early conversation, not for despair.",
+      "The part most often left out of the consultation is mood. Rates of anxiety and low mood are higher in women with PCOS, and that deserves attention in its own right rather than being treated as a side issue.",
+    ],
+  },
+  {
+    id: "b-07",
+    slug: "fever-in-children-when-to-worry",
+    title: "Fever in children: what to watch, and when to call",
+    category: "Children's health",
+    excerpt:
+      "The number on the thermometer matters far less than how your child is behaving. A practical guide for anxious nights.",
+    author: "Dr. Fatima Sheikh",
+    authorRole: "Pediatrics",
+    date: "21 Oct 2026",
+    readingMinutes: 6,
+    featured: false,
+    body: [
+      "Parents are understandably focused on the reading, but fever is a response, not an illness. A child with a temperature of 102°F who is drinking, playing between naps and responding normally is usually less concerning than a listless child at 100°F.",
+      "Watch behaviour: alertness, fluid intake, wet nappies or trips to the toilet, breathing effort, and whether the child settles when the temperature comes down.",
+      "Paracetamol or ibuprofen are for comfort, not for forcing a number down. Dose by weight, not age, and keep a note of the time of each dose so that a tired parent at 3 a.m. is not guessing.",
+      "Call a doctor promptly for any fever in a baby under three months, for a stiff neck, a rash that does not fade under pressure, difficulty breathing, a seizure, persistent vomiting, or a child who is difficult to rouse.",
+      "Also call if a fever has lasted more than five days, even when the child seems otherwise well. Duration matters as much as height.",
+      "This is general guidance. If you are worried about your child, speak to a doctor — being wrong about caution costs very little.",
+    ],
+  },
+  {
+    id: "b-08",
+    slug: "sitting-all-day-small-changes",
+    title: "You cannot out-exercise an entirely seated day",
+    category: "Healthy lifestyle",
+    excerpt:
+      "An hour at the gym does not undo nine hours in a chair. The fix is less dramatic and more frequent than most people expect.",
+    author: "Dr. Arjun Nair",
+    authorRole: "Orthopedics",
+    date: "16 Oct 2026",
+    readingMinutes: 5,
+    featured: false,
+    body: [
+      "Prolonged sitting carries risks that a single daily workout only partly offsets. The problem is the uninterrupted duration, not the total.",
+      "Breaking up the day works better than extending the workout. Standing and moving for two or three minutes every half hour changes circulation and blood sugar handling in ways that a concentrated hour does not.",
+      "Set the reminder somewhere physical rather than on the phone — a glass of water that needs refilling, a printer on another floor, a standing call.",
+      "Back pain from desk work usually responds better to movement variety than to an expensive chair. The best posture is broadly the next one.",
+      "If pain radiates down a leg, comes with numbness, or wakes you at night, that is a different problem and worth getting looked at.",
+    ],
+  },
+];
+
+export const featuredPost = blogPosts.find((p) => p.featured) ?? blogPosts[0];
+
+export const postBySlug = Object.fromEntries(
+  blogPosts.map((p) => [p.slug, p]),
+) as Record<string, BlogPost>;

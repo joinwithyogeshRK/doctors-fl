@@ -1,0 +1,58 @@
+import type { AppNotification } from "@/types";
+
+export const seedNotifications: AppNotification[] = [
+  {
+    id: "n-01",
+    kind: "appointment",
+    title: "Appointment confirmed",
+    body: "Dr. Ananya Rao accepted your appointment for 25 Nov, 4:30 PM.",
+    time: "12 minutes ago",
+    read: false,
+    href: "/patient/appointments",
+  },
+  {
+    id: "n-02",
+    kind: "order",
+    title: "Your order is out for delivery",
+    body: "MH-ORD-48217 is with Mahesh K. and arrives by 2:45 PM.",
+    time: "1 hour ago",
+    read: false,
+    href: "/orders/MH-ORD-48217/tracking",
+  },
+  {
+    id: "n-03",
+    kind: "prescription",
+    title: "Prescription uploaded",
+    body: "Dr. Ananya Rao added RX-4812 for stage 1 hypertension.",
+    time: "3 hours ago",
+    read: false,
+    href: "/patient/prescriptions",
+  },
+  {
+    id: "n-04",
+    kind: "payment",
+    title: "Payment successful",
+    body: "₹900 paid for your cardiology consultation.",
+    time: "Yesterday",
+    read: true,
+    href: "/patient/orders",
+  },
+  {
+    id: "n-05",
+    kind: "appointment",
+    title: "Appointment reminder",
+    body: "Your video consultation with Dr. Sameer Qureshi is in two days.",
+    time: "Yesterday",
+    read: true,
+    href: "/patient/appointments",
+  },
+  {
+    id: "n-06",
+    kind: "order",
+    title: "Medicine delivered",
+    body: "MH-ORD-47980 was delivered on 17 Nov at 11:20 AM.",
+    time: "6 days ago",
+    read: true,
+    href: "/orders/MH-ORD-47980/tracking",
+  },
+];
