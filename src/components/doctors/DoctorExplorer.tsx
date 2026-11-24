@@ -108,7 +108,17 @@ function sortDoctors(list: Doctor[], sort: Sort): Doctor[] {
   }
 }
 
+/**
+ * Next keeps this component mounted when only the query string changes, so the
+ * useState initialisers below would hold on to the previous link's values.
+ * Keying on the query gives every incoming link a clean instance.
+ */
 export function DoctorExplorer() {
+  const params = useSearchParams();
+  return <DoctorExplorerInner key={params.toString()} />;
+}
+
+function DoctorExplorerInner() {
   const params = useSearchParams();
   const initialSpecialty = params.get("specialty") ?? "any";
 

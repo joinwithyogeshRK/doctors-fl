@@ -15,7 +15,17 @@ import { ProductVisual } from "@/components/pharmacy/ProductVisual";
 
 const suggestions = ["Cardiology", "Chest pain", "Paracetamol", "Dr. Rao", "Blood pressure monitor", "Sleep"];
 
+/**
+ * Next keeps this component mounted when only the query string changes, so the
+ * useState initialisers below would hold on to the previous link's values.
+ * Keying on the query gives every incoming link a clean instance.
+ */
 export function GlobalSearch() {
+  const params = useSearchParams();
+  return <GlobalSearchInner key={params.toString()} />;
+}
+
+function GlobalSearchInner() {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
 

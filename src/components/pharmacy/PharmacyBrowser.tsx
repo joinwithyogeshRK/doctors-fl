@@ -21,7 +21,17 @@ const sorts: { id: Sort; label: string }[] = [
   { id: "discount", label: "Biggest discount" },
 ];
 
+/**
+ * Next keeps this component mounted when only the query string changes, so the
+ * useState initialisers below would hold on to the previous link's values.
+ * Keying on the query gives every incoming link a clean instance.
+ */
 export function PharmacyBrowser({ store }: { store: "pharmacy" | "wellness" }) {
+  const params = useSearchParams();
+  return <PharmacyBrowserInner key={`${store}:${params.toString()}`} store={store} />;
+}
+
+function PharmacyBrowserInner({ store }: { store: "pharmacy" | "wellness" }) {
   const params = useSearchParams();
   const [query, setQuery] = useState(params.get("q") ?? "");
   const [category, setCategory] = useState(params.get("category") ?? "all");

@@ -80,7 +80,17 @@ const paymentMethods: { value: PaymentMethod; label: string; description: string
   { value: "pay-at-clinic", label: "Pay at clinic", description: "Settle when you arrive", icon: <Banknote size={18} /> },
 ];
 
+/**
+ * Next keeps this component mounted when only the query string changes, so the
+ * useState initialisers below would hold on to the previous link's values.
+ * Keying on the query gives every incoming link a clean instance.
+ */
 export function BookingFlow() {
+  const params = useSearchParams();
+  return <BookingFlowInner key={params.toString()} />;
+}
+
+function BookingFlowInner() {
   const params = useSearchParams();
   const { toast } = useToast();
   const reduce = useReducedMotion();
